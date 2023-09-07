@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfólio</title>
 
-    <link rel="stylesheet" href="/public/styles.css" />
+    <link rel="stylesheet" href="/public/tailwind.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header class="w-full h-20 bg-purple">
+  <body class="min-h-screen dark:bg-gray-900">
+    <header class="w-full h-20 bg-purple-200 p-3 flex items-center">
       <!-- Sidebar -->
       <button
         data-drawer-target="default-sidebar"
         data-drawer-toggle="default-sidebar"
         aria-controls="default-sidebar"
         type="button"
-        class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-white rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        class="inline-flex items-center absolute right-5 p-2 ml-3 text-sm text-gray-900 rounded-lg bg-gray-100 sm:hidden hover:bg-gray-100 focus:outline-none dark:text-white dark:bg-gray-900 dark:hover:bg-gray-900 dark:focus:ring-gray-600"
       >
         <svg
-          class="w-6 h-6"
+          class="w-8 h-8"
           aria-hidden="true"
           fill="currentColor"
           viewBox="0 0 20 20"
@@ -41,7 +41,7 @@
         class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
-        <div class="flex items-center bg-blue-500 w-full h-20 p-2">
+        <div class="flex items-center bg-purple w-full h-20 p-2">
           <div class="flex items-center ml-4 space-x-4">
             <img
               class="w-12 h-12 rounded-full"
@@ -51,13 +51,13 @@
             <div
               class="flex flex-col justify-between gap-y-1.5 dark:text-white"
             >
-              <div class="text-xl">Igu.dev</div>
+              <div class="text-xl text-gray-900 dark:text-white">Igu.dev</div>
               <div
                 class="text-gray-500 p-1 flex items-center justify-between dark:text-gray-400"
               >
                 <a href="">
                   <svg
-                    class="w-5 h-5 duration-500 text-white hover:text-gray-800 dark:text-white"
+                    class="w-5 h-5 duration-500 text-gray-900 hover:text-white dark:text-white dark:hover:text-gray-900"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -72,7 +72,7 @@
                 </a>
                 <a href="">
                   <svg
-                    class="w-5 h-5 duration-500 text-white hover:text-gray-800 dark:text-white"
+                    class="w-5 h-5 duration-500 text-gray-900 hover:text-white dark:text-white dark:hover:text-gray-900"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -97,7 +97,7 @@
             <li>
               <a
                 href="#"
-                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
               >
                 <svg
                   class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -120,7 +120,7 @@
             <li>
               <a
                 href="#"
-                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
               >
                 <svg
                   class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -139,7 +139,7 @@
             <li>
               <a
                 href="#"
-                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
               >
                 <svg
                   class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -163,7 +163,7 @@
               id="dropdownDefaultButton"
               data-dropdown-toggle="dropdown"
               type="button"
-              class="w-full flex justify-between items-center text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2 text-center mr-2 mb-2"
+              class="w-full flex justify-between items-center text-gray-900 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2 text-center mr-2 mb-2"
             >
               Idioma
               <svg
@@ -194,7 +194,7 @@
                 <li>
                   <a
                     href="#"
-                    class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-600 dark:hover:text-white"
+                    class="block px-4 py-2 hover:bg-gray-300 hover:text-gray-800 dark:hover:bg-gray-600 dark:hover:text-white"
                     >English</a
                   >
                 </li>
