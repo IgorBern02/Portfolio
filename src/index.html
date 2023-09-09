@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio</title>
 
-    <link rel="stylesheet" href="/public/tailwind.css" />
+    <link rel="stylesheet" href="../public/tailwind.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
       rel="stylesheet"
     />
   </head>
   <body class="min-h-screen dark:bg-gray-900">
-    <header class="w-full h-20 bg-purple-200 p-3 flex items-center">
+    <header class="w-screen h-20 bg-brand-400 p-3 flex items-center">
       <!-- Sidebar -->
       <button
         data-drawer-target="default-sidebar"
@@ -41,23 +41,25 @@
         class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
-        <div class="flex items-center bg-purple w-full h-20 p-2">
-          <div class="flex items-center ml-4 space-x-4">
+        <div class="flex items-center sm:w-screen h-20 p-2">
+          <div class="flex justify-around sm:justify-between items-center space-x-4 sm:relative bg-brand-100 sm:w-screen">
             <img
-              class="w-12 h-12 rounded-full"
+              class="w-14 h-14 rounded-full ml-6"
               src="/docs/images/people/profile-picture-5.jpg"
               alt=""
             />
             <div
-              class="flex flex-col justify-between gap-y-1.5 dark:text-white"
+              class="flex flex-col sm:flex-row items-center sm:justify-between sm:gap-x-4 bg-gray-300 sm:h-full sm:absolute sm:right-6 dark:text-white"
             >
-              <div class="text-xl text-gray-900 dark:text-white">Igu.dev</div>
+              <div>
+                <p class="text-2xl sm:text-4xl text-gray-900 font-mono dark:text-white">Igu.dev</p>
+              </div>
               <div
-                class="text-gray-500 p-1 flex items-center justify-between dark:text-gray-400"
+                class="text-gray-500 flex items-center gap-x-4 sm:h-full dark:text-gray-400"
               >
                 <a href="">
                   <svg
-                    class="w-5 h-5 duration-500 text-gray-900 hover:text-white dark:text-white dark:hover:text-gray-900"
+                    class="w-5 h-5 sm:w-12 sm:h-12 duration-500 text-gray-900 hover:text-white dark:text-white dark:hover:text-gray-900"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -72,7 +74,7 @@
                 </a>
                 <a href="">
                   <svg
-                    class="w-5 h-5 duration-500 text-gray-900 hover:text-white dark:text-white dark:hover:text-gray-900"
+                    class="w-5 h-5 sm:w-12 sm:h-12 duration-500 text-gray-900 hover:text-white dark:text-white dark:hover:text-gray-900"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -163,7 +165,7 @@
               id="dropdownDefaultButton"
               data-dropdown-toggle="dropdown"
               type="button"
-              class="w-full flex justify-between items-center text-gray-900 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2 text-center mr-2 mb-2"
+              class="w-full flex justify-between items-center text-gray-900 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2 text-center mr-2 mb-2"
             >
               Idioma
               <svg
