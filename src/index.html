@@ -93,7 +93,7 @@
           </div>
         </div>
         <div
-          class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800"
+          class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800 sm:w-1/5 sm:hover:w-full duration-300"
         >
           <ul class="space-y-2 font-medium">
             <li>
@@ -161,14 +161,30 @@
                 <span class="flex-1 ml-3 whitespace-nowrap">Contato</span>
               </a>
             </li>
-            <button
-              id="dropdownDefaultButton"
-              data-dropdown-toggle="dropdown"
+            <li
+            id="dropdownDefaultButton"
+            data-dropdown-toggle="dropdown">
+              <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group">
+              <svg 
+              class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" 
+              aria-hidden="true" xmlns="http://www.w3.org/2000/svg" 
+              fill="none" 
+              viewBox="0 0 21 20"
+              >
+                <path 
+                stroke="currentColor" 
+                stroke-linecap="round" 
+                stroke-linejoin="round" 
+                stroke-width="2" 
+                d="M6.487 1.746c0 4.192 3.592 1.66 4.592 5.754 0 .828 1 1.5 2 1.5s2-.672 2-1.5a1.5 1.5 0 0 1 1.5-1.5h1.5m-16.02.471c4.02 2.248 1.776 4.216 4.878 5.645C10.18 13.61 9 19 9 19m9.366-6h-2.287a3 3 0 0 0-3 3v2m6-8a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+              </svg>
+
+              <button
               type="button"
-              class="w-full flex justify-between items-center text-gray-900 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-poppins rounded-lg text-sm px-5 py-2 text-center mr-2 mb-2"
+              class="flex items-center ml-3"
             >
-              Idioma
-              <svg
+            Idioma
+            <svg
                 class="w-2.5 h-2.5 ml-2.5"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +199,9 @@
                   d="m1 1 4 4 4-4"
                 />
               </svg>
-            </button>
+              </button>
+            </a>
+          </li>
             <!-- Dropdown menu -->
             <div
               id="dropdown"
@@ -207,15 +225,15 @@
       </aside>
     </header>
 
-    <section class=" w-screen h-auto p-5 flex justify-center mt-12 dark:text-white">
-      <div class="w-4/5 h-auto flex flex-col justify-between items-center gap-y-3 font-poppins ">
-        <p class="text-1xl font-medium font-roboto">Oi, eu sou o</p>
-        <h1 class="text-4xl font-roboto">Igor Bernardes</h1>
-        <p class="text-xs font-light">Eu sou estudante de programação, com foco em front end desenvolvimento web, 
+    <section class="w-screen h-auto p-5 flex justify-center mt-12 dark:text-white">
+      <div class="w-4/5 sm:w-3/5 h-auto flex flex-col justify-evenly items-center gap-y-3  font-poppins">
+        <p class="text-1xl sm:text-xl font-medium font-roboto">Oi, eu sou o</p>
+        <h1 class="text-4xl sm:text-6xl font-roboto">Igor Bernardes</h1>
+        <p class="text-xs font-light sm:text-sm sm:w-3/5 mt-9">Eu sou estudante de programação, com foco em front end desenvolvimento web, 
           estou no segundo semestre da Faculdade de Análise e Desenvolvimento de Software
         </p>
 
-        <button type="button" class="text-black dark:text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:outline-none shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Veja Meus Projetos</button
+        <button type="button" class="text-black dark:text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:outline-none shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Veja Meus Projetos</button>
       </div>
     </section>
 
