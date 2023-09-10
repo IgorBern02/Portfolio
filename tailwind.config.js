@@ -11,6 +11,8 @@ module.exports = {
           300: "#483D8B",
           400: "#654AD7",
         },
+        corLua: "#f1c40f",
+        corSol: "#f39c12",
       },
       fontFamily: {
         'nunito': ['Nunito', 'sans-serif'],

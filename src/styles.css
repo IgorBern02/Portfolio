@@ -3,3 +3,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+    .mudarCor{
+        transform: translateX(0px);
+        transition: transform 0.2s linear;
+    }
+
+    #chk:checked + label #ball{
+        transform: translateX(28px);
+    }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="min-h-screen dark:bg-gray-900">
+  <body class="min-h-screen bg-white dark:bg-black">
     <header class="w-screen h-20 bg-brand-400 p-3 flex items-center">
       <!-- Sidebar -->
       <button
@@ -52,7 +52,7 @@
               class="flex flex-col sm:flex-row items-center sm:gap-x-4 sm:w-full dark:text-white"
             >
               <div>
-                <p class="text-2xl sm:text-6xl text-black font-poppins dark:text-white">Igu.dev</p>
+                <p class="text-2xl sm:text-6xl text-black font-poppins dark:text-white">teste</p>
               </div>
               <div
                 class="text-gray-500 flex items-center gap-x-4 sm:absolute sm:right-7 dark:text-gray-400"
@@ -88,6 +88,12 @@
                     <path d="M3 5.012H0V15h3V5.012Z" />
                   </svg>
                 </a>
+                <input type="checkbox" class="opacity-0 absolute" id="chk">
+                <label for="chk" class="bg-black dark:bg-white rounded-full cursor-pointer flex items-center justify-between relative h-6 w-14 p-1 scale-9">
+                  <i class="fas fa-sun text-corSol"></i>
+                  <i class="fas fa-moon text-corLua"></i>               
+                  <div id="ball" class="bg-white dark:bg-black rounded-full dark:border dark:border-black absolute h-5 w-5 mudarCor"></div>
+                </label>
               </div>
             </div>
           </div>
@@ -225,12 +231,12 @@
       </aside>
     </header>
 
-    <section class="w-screen h-auto p-5 flex justify-center mt-12 dark:text-white">
-      <div class="w-4/5 sm:w-3/5 h-auto flex flex-col justify-evenly items-center gap-y-3  font-poppins">
+    <section class="w-screen h-auto p-5 flex justify-center mt-12">
+      <div class="w-4/5 sm:w-3/5 h-auto flex flex-col justify-evenly items-center gap-y-3 dark:text-white font-poppins">
         <p class="text-1xl sm:text-xl font-medium font-roboto">Oi, eu sou o</p>
         <h1 class="text-4xl sm:text-6xl font-roboto">Igor Bernardes</h1>
         <p class="text-xs font-light sm:text-sm sm:w-3/5 mt-9">Eu sou estudante de programação, com foco em front end desenvolvimento web, 
-          estou no segundo semestre da Faculdade de Análise e Desenvolvimento de Software
+          estou no segundo semestre da Faculdade de Análise e Desenvolvimento de Sistemas.
         </p>
 
         <button type="button" class="text-black dark:text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:outline-none shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Veja Meus Projetos</button>
@@ -238,5 +244,7 @@
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
