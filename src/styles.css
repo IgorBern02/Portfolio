@@ -13,4 +13,9 @@
     #chk:checked + label #ball{
         transform: translateX(28px);
     }
+
+    .porcentagem{
+        @apply relative flex-1 border h-7 rounded-full text-center text-white text-sm font-light font-poppins border-brand-400 overflow-hidden;
+    }
+    
 }
