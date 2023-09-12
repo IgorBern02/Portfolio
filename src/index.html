@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
       rel="stylesheet"
     />
+    
   </head>
   <body class="min-h-screen bg-white dark:bg-black">
     <header class="w-screen h-20 bg-brand-400 p-3 flex items-center">
@@ -46,10 +47,10 @@
             class="flex justify-around sm:justify-between items-center space-x-8 sm:relative sm:w-screen"
           >
             <img
-              class="w-12 h-12 p-1 rounded-full ring-2 ring-black dark:ring-gray-100 ml-6"
-              src="/docs/images/people/profile-picture-5.jpg"
-              alt=""
-            />
+  class="relative inline-block h-12 w-12 rounded-lg object-cover object-center"
+  alt="Image placeholder"
+  src="/img/face-2.jpg"
+/>
             <div
               class="flex flex-col sm:flex-row items-center sm:gap-x-4 sm:w-full dark:text-white"
             >
@@ -57,7 +58,7 @@
                 <p
                   class="text-2xl sm:text-6xl text-black font-poppins dark:text-white"
                 >
-                  teste
+                  Igu.dev
                 </p>
               </div>
               <div
@@ -243,7 +244,7 @@
       </aside>
     </header>
 
-    <section class="w-screen h-auto p-5 flex justify-center mt-12">
+    <section class="w-screen h-auto p-5 flex justify-center mt-28">
       <div
         class="w-4/5 sm:w-3/5 h-auto flex flex-col justify-evenly items-center gap-y-3 dark:text-white font-poppins"
       >
@@ -265,68 +266,481 @@
     </section>
 
     <section
-      class="w-screen border h-auto p-5 flex justify-center mt-40 flex flex-col justify-center items-center bg-gray-100 dark:bg-gray-800"
+      class="w-screen h-screen p-5 flex justify-center mt-28 sm:mt-20 flex flex-col justify-center items-center"
     >
       <div>
-        <h1 class="font-roboto text-3xl font-medium dark:text-white">Minhas Habilidades</h1>
+        <h1 class="font-roboto text-3xl font-medium dark:text-white">
+          Minhas Habilidades
+        </h1>
       </div>
 
-      <div class="border flex flex-row justify-around p-5 mt-10 w-4/5 gap-y-3 bg-gray-200 dark:bg-gray-900 dark:text-white rounded-lg">
-        <div class="flex flex-col items-center justify-center gap-y-3 w-2/5 border ">
-          <div class="flex flex-row justify-center items-center border w-full gap-x-2">
-            <div class="porcentagem">
-              <div class="bg-brand-300 absolute h-full w-11/12 rounded-full"></div>
-              <p class="z-10 relative text-white mt-1">Html</p>
+      <div
+        class="flex flex-col sm:flex-row sm:justify-around p-5 mt-16 w-4/5 sm:h-2/5 bg-gray-100 dark:bg-gray-900 dark:text-white rounded-lg"
+      >
+        <div class="flex flex-col items-center justify-center gap-y-12 sm:w-2/5">
+          <div class="flex flex-row justify-center items-center w-full gap-x-2">
+            <div class="porcentagem group cursor-pointer h-8 sm:h-7">
+              <div
+                class="bg-brand-400 z-10 absolute h-full w-0 group-hover:w-11/12 duration-500 rounded-full"
+              ></div>
+              <div
+                class="bg-brand-300 absolute h-full w-11/12 rounded-full"
+              ></div>
+              <p class="z-20 relative text-white mt-1">Html</p>
             </div>
             <p class="font-light font-poppins">90%</p>
           </div>
-          <div class="flex flex-row justify-center items-center border w-full gap-x-2">
-            <div class="porcentagem">
-              <div class="bg-brand-300 absolute h-full w-11/12 rounded-full"></div>
-              <p class="z-10 relative text-white mt-1">Css</p>
+          <div class="flex flex-row justify-center items-center w-full gap-x-2">
+            <div class="porcentagem group cursor-pointer h-8 sm:h-7">
+              <div
+                class="bg-brand-400 z-10 absolute h-full w-0 group-hover:w-11/12 duration-500 rounded-full"
+              ></div>
+              <div
+                class="bg-brand-300 absolute h-full w-11/12 rounded-full"
+              ></div>
+              <p class="z-20 relative text-white mt-1">Css</p>
             </div>
             <p class="font-light font-poppins">90%</p>
           </div>
-          <div class="flex flex-row justify-center items-center border w-full gap-x-2">
-            <div class="porcentagem">
-              <div class="bg-brand-300 absolute h-full w-4/12 rounded-full"></div>
-              <p class="z-10 relative text-white mt-1">JavaScript</p>
-            </div>
-            <p class="font-light font-poppins">30%</p>
-          </div>
-        </div>
-
-        <div class="flex flex-col items-center justify-center gap-y-3 w-2/5 border ">
-          <div class="flex flex-row justify-center items-center border w-full gap-x-2">
-            <div class="porcentagem">
-              <div class="bg-brand-300 absolute h-full w-3/5 rounded-full"></div>
-              <p class="z-10 relative text-white mt-1">Tailwind</p>
-            </div>
-            <p class="font-light font-poppins">60%</p>
-          </div>
-          <div class="flex flex-row justify-center items-center border w-full gap-x-2">
-            <div class="porcentagem">
-              <div class="bg-brand-300 absolute h-full w-2/5 rounded-full"></div>
-              <p class="z-10 relative text-white mt-1">Git/GitHub</p>
+          <div class="flex flex-row justify-center items-center w-full gap-x-2">
+            <div class="porcentagem group cursor-pointer h-8 sm:h-7">
+              <div
+                class="bg-brand-400 z-10 absolute h-full w-0 group-hover:w-5/12 duration-500 rounded-full"
+              ></div>
+              <div
+                class="bg-brand-300 absolute h-full w-5/12 rounded-full"
+              ></div>
+              <p class="z-20 relative text-black dark:text-white mt-1 mr-1">
+                <span class="text-white">J</span>avaScript
+              </p>
             </div>
             <p class="font-light font-poppins">40%</p>
           </div>
-          <div class="flex flex-row justify-center items-center border w-full gap-x-2">
-            <div class="porcentagem">
-              <div class="bg-brand-300 absolute h-full w-8/12 rounded-full"></div>
-              <p class="z-10 relative text-white mt-1">Sass</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-y-12 sm:w-2/5 mt-12 sm:mt-0">
+          <div class="flex flex-row justify-center items-center w-full gap-x-2">
+            <div class="porcentagem group cursor-pointer h-8 sm:h-7">
+              <div
+                class="bg-brand-400 z-10 absolute h-full w-0 group-hover:w-3/5 duration-500 rounded-full"
+              ></div>
+              <div
+                class="bg-brand-300 absolute h-full w-3/5 rounded-full"
+              ></div>
+              <p class="z-20 relative text-white mt-1">Tailwind</p>
             </div>
-            <p class="font-light font-poppins">65%</p>
+            <p class="font-light font-poppins">60%</p>
+          </div>
+          <div class="flex flex-row justify-center items-center w-full gap-x-2">
+            <div class="porcentagem group cursor-pointer h-8 sm:h-7">
+              <div
+                class="bg-brand-400 z-10 absolute h-full w-0 group-hover:w-2/5 duration-500 rounded-full"
+              ></div>
+              <div
+                class="bg-brand-300 absolute h-full w-2/5 rounded-full"
+              ></div>
+              <p class="z-20 relative text-black dark:text-white mt-1">
+                Git/GitHub
+              </p>
+            </div>
+            <p class="font-light font-poppins">40%</p>
+          </div>
+          <div class="flex flex-row justify-center items-center w-full gap-x-2">
+            <div class="porcentagem group cursor-pointer h-8 sm:h-7">
+              <div
+                class="bg-brand-400 z-10 absolute h-full w-0 group-hover:w-8/12 duration-500 rounded-full"
+              ></div>
+              <div
+                class="bg-brand-300 absolute h-full w-8/12 rounded-full"
+              ></div>
+              <p class="z-20 relative text-white mt-1">Sass</p>
+            </div>
+            <p class="font-light font-poppins">60%</p>
           </div>
         </div>
       </div>
     </section>
 
+    <section class="border border-blue-800 relative w-screen h-auto p-5 flex justify-center mt-28">
+      <div class="border w-full absolute font-medium text-center font-roboto text-3xl font-medium dark:text-white" >
+        <h1>Meus Projetos</h1>
+      </div>
+      <div class="grid sm:grid-cols-2 sm:grid-rows-2 gap-20 mt-24">
+        <div
+          class="max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="../docs/images/sistemaBanco.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Relógio Digital
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Projeto com a ideia de fazer um Relógio Digital com hora e data ao vivo, feito com Html,Css(Sass),Js.
+            </p>
+            <div class="flex items-center justify-between">
+              <button
+              data-modal-target="modalRelogio" 
+              data-modal-toggle="modalRelogio"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700"
+            >
+              Saber mais
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </button>
+
+            <div class="flex items-center gap-x-4">
+              <a href="https://github.com/IgorBern02/digital-clock">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+              <a href="https://igorbern02.github.io/digital-clock/">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" viewBox="0 0 20 18">
+    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"/>
+                </svg>
+              </a>
+            </div>
+            </div>
+            
+            <!---Modal-->
+            <div id="modalRelogio" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            Relógio Digital
+                        </h3>
+                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modalRelogio">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-6 space-y-6">
+                        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                            Esse projeto foi desenvolvido com a intenção de estudar o objeto do javascript NewDate().
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                        <button data-modal-hide="modalRelogio" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700">voltar</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="relative max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="../docs/images/sistemaBanco.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Sistema Bancário
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Projeto de um sistema de saques e depositos com javascript.
+            </p>
+            <div class="flex items-center justify-between relative top-6">
+              <button
+              data-modal-target="modalRelogio" 
+              data-modal-toggle="modalRelogio"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700"
+            >
+              Saber mais
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </button>
+
+            <div class="flex items-center gap-x-4">
+              <a href="https://github.com/IgorBern02/Sistema-Banco">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+              <a href="https://igorbern02.github.io/Sistema-Banco/">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" viewBox="0 0 20 18">
+    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"/>
+                </svg>
+              </a>
+            </div>
+            </div>
+            
+            <!---Modal-->
+            <div id="modalRelogio" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            Relógio Digital
+                        </h3>
+                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modalRelogio">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-6 space-y-6">
+                        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                            Esse projeto foi desenvolvido com a intenção de estudar o objeto do javascript NewDate().
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                        <button data-modal-hide="modalRelogio" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700">voltar</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Relógio Digital
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Projeto com a ideia de fazer um Relógio Digital com hora e data ao vivo, feito com Html,Css(Sass),Js.
+            </p>
+            <div class="flex items-center justify-between">
+              <button
+              data-modal-target="modalRelogio" 
+              data-modal-toggle="modalRelogio"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700"
+            >
+              Saber mais
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </button>
+
+            <div class="flex items-center gap-x-4">
+              <a href="https://github.com/IgorBern02/digital-clock">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+              <a href="https://igorbern02.github.io/digital-clock/">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" viewBox="0 0 20 18">
+    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"/>
+                </svg>
+              </a>
+            </div>
+            </div>
+            
+            <!---Modal-->
+            <div id="modalRelogio" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            Relógio Digital
+                        </h3>
+                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modalRelogio">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-6 space-y-6">
+                        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                            Esse projeto foi desenvolvido com a intenção de estudar o objeto do javascript NewDate().
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                        <button data-modal-hide="modalRelogio" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700">voltar</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="/docs/images/blog/image-1.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Relógio Digital
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Projeto com a ideia de fazer um Relógio Digital com hora e data ao vivo, feito com Html,Css(Sass),Js.
+            </p>
+            <div class="flex items-center justify-between">
+              <button
+              data-modal-target="modalRelogio" 
+              data-modal-toggle="modalRelogio"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700"
+            >
+              Saber mais
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </button>
+
+            <div class="flex items-center gap-x-4">
+              <a href="https://github.com/IgorBern02/digital-clock">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+              <a href="https://igorbern02.github.io/digital-clock/">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" viewBox="0 0 20 18">
+    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"/>
+                </svg>
+              </a>
+            </div>
+            </div>
+            
+            <!---Modal-->
+            <div id="modalRelogio" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            Relógio Digital
+                        </h3>
+                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modalRelogio">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-6 space-y-6">
+                        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                            Esse projeto foi desenvolvido com a intenção de estudar o objeto do javascript NewDate().
+                        </p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                        <button data-modal-hide="modalRelogio" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700">voltar</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+      
+        
+      </div>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/998c60ef77.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
   </body>
 </html>
