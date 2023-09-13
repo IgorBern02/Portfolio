@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth :target:scroll-mt-4">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -117,7 +117,7 @@
           <ul class="space-y-2 font-medium">
             <li>
               <a
-                href="#"
+                href="#projetos"
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
               >
                 <svg
@@ -140,26 +140,25 @@
             </li>
             <li>
               <a
-                href="#"
+                href="#skills"
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
               >
-                <svg
-                  class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
+                <svg 
+                class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" 
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" 
+                fill="currentColor" 
+                viewBox="0 0 20 20"
                 >
                   <path
-                    d="M20 9V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v7h20ZM0 11v2a2 2 0 0 0 2 2h7v3H6a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2h-3v-3h7a2 2 0 0 0 2-2v-2H0Z"
-                  />
+                    d="M.906 0 2.5 17.683l7.5 2.159 7.544-2.158L19.092 0H.906ZM15.1 6H7.044l.174 2h7.776l-.632 6.513-4.29 1.371-4.326-1.444-.29-2.909H7.5l.163 1.4 2.424.809 2.37-.757.3-2.982H5.368L4.8 4h10.519L15.1 6Z"/>
                 </svg>
-                <span class="flex-1 ml-3 whitespace-nowrap">Cursos</span>
+                <span class="flex-1 ml-3 whitespace-nowrap">Linguagens</span>
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="#contato"
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
               >
                 <svg
@@ -244,6 +243,7 @@
       </aside>
     </header>
 
+    <!--Bio-->
     <section class="w-screen h-auto p-5 flex justify-center mt-28">
       <div
         class="w-4/5 sm:w-3/5 h-auto flex flex-col justify-evenly items-center gap-y-3 dark:text-white font-poppins"
@@ -256,16 +256,20 @@
           Desenvolvimento de Sistemas.
         </p>
 
+        <a href="#projetos">
         <button
           type="button"
           class="text-black dark:text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:outline-none shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
         >
           Veja Meus Projetos
         </button>
+      </a>
       </div>
     </section>
 
+    <!--Habilidades-->
     <section
+      id="skills"
       class="w-screen h-screen p-5 flex justify-center mt-28 sm:mt-20 flex flex-col justify-center items-center"
     >
       <div>
@@ -361,15 +365,17 @@
       </div>
     </section>
 
-    <section class="border border-blue-800 relative w-screen h-auto p-5 flex justify-center mt-28">
-      <div class="border w-full absolute font-medium text-center font-roboto text-3xl font-medium dark:text-white" >
+    <!--Projetos-->
+    <section id="projetos" class="relative w-screen h-auto p-5 flex justify-center mt-28">
+      <div class="w-full absolute font-medium text-center font-roboto text-3xl font-medium dark:text-white" >
         <h1>Meus Projetos</h1>
       </div>
       <div class="grid sm:grid-cols-2 sm:grid-rows-2 gap-20 mt-24">
+        <!--Relógio Digital-->
         <div
           class="max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
-          <a href="https://igorbern02.github.io/digital-clock/">
+          <a href="https://igorbern02.github.io/digital-clock/" target="_blank">
             <img
               class="rounded-t-lg"
               src="../docs/images/relogioDigital.png"
@@ -412,12 +418,12 @@
             </button>
 
             <div class="flex items-center gap-x-4">
-              <a href="https://github.com/IgorBern02/digital-clock">
+              <a href="https://github.com/IgorBern02/digital-clock" target="_blank">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
                 </svg>
               </a>
-              <a href="https://igorbern02.github.io/digital-clock/">
+              <a href="https://igorbern02.github.io/digital-clock/" target="_blank">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" viewBox="0 0 20 18">
     <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"/>
                 </svg>
@@ -458,10 +464,11 @@
           </div>
         </div>
 
+        <!--Sistema Banco-->
         <div
           class="relative max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
-          <a href="https://igorbern02.github.io/Sistema-Banco/">
+          <a href="https://igorbern02.github.io/Sistema-Banco/" target="_blank">
             <img
               class="rounded-t-lg"
               src="../docs/images/sistemaBanco.png"
@@ -504,12 +511,12 @@
             </button>
 
             <div class="flex items-center gap-x-4">
-              <a href="https://github.com/IgorBern02/Sistema-Banco">
+              <a href="https://github.com/IgorBern02/Sistema-Banco" target="_blank">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
                 </svg>
               </a>
-              <a href="https://igorbern02.github.io/Sistema-Banco/">
+              <a href="https://igorbern02.github.io/Sistema-Banco/" target="_blank">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" viewBox="0 0 20 18">
     <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"/>
                 </svg>
@@ -550,13 +557,14 @@
           </div>
         </div>
 
+        <!--Landing Page-->
         <div
           class="max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
-          <a href="#">
+          <a href="https://igorbern02.github.io/Travel-Dream/" target="_blank">
             <img
               class="rounded-t-lg"
-              src="/docs/images/blog/image-1.jpg"
+              src="/docs/images/landingPaises.png"
               alt=""
             />
           </a>
@@ -573,8 +581,8 @@
             </p>
             <div class="flex items-center justify-between">
               <button
-              data-modal-target="modalRelogio" 
-              data-modal-toggle="modalRelogio"
+              data-modal-target="modalPaises" 
+              data-modal-toggle="modalPaises"
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700"
             >
               Saber mais
@@ -596,12 +604,12 @@
             </button>
 
             <div class="flex items-center gap-x-4">
-              <a href="https://github.com/IgorBern02/digital-clock">
+              <a href="https://github.com/IgorBern02/Travel-Dream" target="_blank">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
                 </svg>
               </a>
-              <a href="https://igorbern02.github.io/digital-clock/">
+              <a href="https://igorbern02.github.io/Travel-Dream/" target="_blank">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" viewBox="0 0 20 18">
     <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"/>
                 </svg>
@@ -610,7 +618,7 @@
             </div>
             
             <!---Modal-->
-            <div id="modalRelogio" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div id="modalPaises" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
               <div class="relative w-full max-w-2xl max-h-full">
                 <!-- Modal content -->
                 <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
@@ -619,7 +627,7 @@
                         <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
                             Relógio Digital
                         </h3>
-                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modalRelogio">
+                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modalPaises">
                             <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
                             </svg>
@@ -634,7 +642,7 @@
                     </div>
                     <!-- Modal footer -->
                     <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                        <button data-modal-hide="modalRelogio" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700">voltar</button>
+                        <button data-modal-hide="modalPaises" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700">voltar</button>
                     </div>
                 </div>
             </div>
@@ -642,13 +650,14 @@
           </div>
         </div>
 
+        <!--Login Validado-->
         <div
           class="max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
-          <a href="#">
+          <a href="https://igorbern02.github.io/Login_Validado/" target="_blank">
             <img
               class="rounded-t-lg"
-              src="/docs/images/blog/image-1.jpg"
+              src="/docs/images/loginValidado.png"
               alt=""
             />
           </a>
@@ -657,16 +666,16 @@
               <h5
                 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
               >
-                Relógio Digital
+                Validação de Login
               </h5>
             </a>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Projeto com a ideia de fazer um Relógio Digital com hora e data ao vivo, feito com Html,Css(Sass),Js.
+              Sistema de login para validações feito com js e firebase, meu primeiro login com validações.
             </p>
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between relative sm:top-12">
               <button
-              data-modal-target="modalRelogio" 
-              data-modal-toggle="modalRelogio"
+              data-modal-target="modalLogin" 
+              data-modal-toggle="modalLogin"
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700"
             >
               Saber mais
@@ -688,12 +697,12 @@
             </button>
 
             <div class="flex items-center gap-x-4">
-              <a href="https://github.com/IgorBern02/digital-clock">
+              <a href="https://github.com/IgorBern02/Login_Validado" target="_blank">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
                 </svg>
               </a>
-              <a href="https://igorbern02.github.io/digital-clock/">
+              <a href="https://igorbern02.github.io/Login_Validado/" target="_blank">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" viewBox="0 0 20 18">
     <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"/>
                 </svg>
@@ -702,16 +711,16 @@
             </div>
             
             <!---Modal-->
-            <div id="modalRelogio" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div id="modalLogin" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
               <div class="relative w-full max-w-2xl max-h-full">
                 <!-- Modal content -->
                 <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                     <!-- Modal header -->
                     <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
                         <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                            Relógio Digital
+                            Validações de login
                         </h3>
-                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modalRelogio">
+                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modalLogin">
                             <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
                             </svg>
@@ -721,12 +730,12 @@
                     <!-- Modal body -->
                     <div class="p-6 space-y-6">
                         <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                            Esse projeto foi desenvolvido com a intenção de estudar o objeto do javascript NewDate().
+                            Um login com validações para estudos.
                         </p>
                     </div>
                     <!-- Modal footer -->
                     <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                        <button data-modal-hide="modalRelogio" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700">voltar</button>
+                        <button data-modal-hide="modalLogin" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700">voltar</button>
                     </div>
                 </div>
             </div>
@@ -738,6 +747,30 @@
         
       </div>
     </section>
+
+    
+
+    <footer class="bg-gray-100 rounded-lg shadow dark:bg-gray-900 m-4" id="contato">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8 mt-12 flex flex-col items-center justify-center">
+          <div class="sm:flex sm:items-center sm:justify-between">
+              <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                  <li>
+                      <a href="https://github.com/IgorBern02" class="mr-4 hover:underline md:mr-6 ">GitHub</a>
+                  </li>
+                  <li>
+                      <a href="https://wa.me/5513991246604"target="_blank" class="mr-4 hover:underline md:mr-6">Whatsapp</a>
+                  </li>
+                  <li>
+                      <a href="#" class="mr-4 hover:underline md:mr-6 ">LinkedIn</a>
+                  </li>
+              </ul>
+          </div>
+          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright © Igor Bernardes</span>
+      </div>
+  </footer>
+  
+  
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
