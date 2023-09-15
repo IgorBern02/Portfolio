@@ -596,10 +596,6 @@ video {
   z-index: 50;
 }
 
-.m-4{
-  margin: 1rem;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -955,24 +951,12 @@ video {
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
 }
 
-.overflow-hidden{
-  overflow: hidden;
-}
-
 .overflow-y-auto{
   overflow-y: auto;
 }
 
 .overflow-x-hidden{
   overflow-x: hidden;
-}
-
-.overflow-y-hidden{
-  overflow-y: hidden;
-}
-
-.overflow-x-scroll{
-  overflow-x: scroll;
 }
 
 .scroll-smooth{
