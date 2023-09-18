@@ -665,6 +665,14 @@ video {
   margin-top: 2.25rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .block{
   display: block;
 }
@@ -731,6 +739,14 @@ video {
 
 .h-screen{
   height: 100vh;
+}
+
+.h-4\/5{
+  height: 80%;
+}
+
+.h-3\/5{
+  height: 60%;
 }
 
 .max-h-full{
@@ -1237,6 +1253,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-brand-400{
+  --tw-text-opacity: 1;
+  color: rgb(101 74 215 / var(--tw-text-opacity));
+}
+
 .opacity-0{
   opacity: 0;
 }
@@ -1572,6 +1593,10 @@ video {
     width: 100vw;
   }
 
+  .sm\:w-4\/5{
+    width: 80%;
+  }
+
   .sm\:translate-x-0{
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1622,6 +1647,31 @@ video {
 
   .sm\:text-xl{
     font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .sm\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .sm\:text-lg{
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
