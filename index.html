@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth :target:scroll-mt-4">
+<html lang="pt-br" class="scroll-smooth :target:scroll-mt-4">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,8 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    
+    <script src="https://cdn.gtranslate.net/widgets/latest/fc.js" defer></script>
+
   </head>
   <body class="min-h-screen bg-white dark:bg-black overflow-x-hidden">
     <!--Header-->
@@ -179,11 +180,14 @@
                 <span class="flex-1 ml-3 whitespace-nowrap">Contato</span>
               </a>
             </li>
+            <li>
             <li id="dropdownDefaultButton" data-dropdown-toggle="dropdown">
               <a
                 href="#"
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
               >
+              
+             
                 <svg
                   class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                   aria-hidden="true"
@@ -200,7 +204,8 @@
                   />
                 </svg>
 
-                <button type="button" class="flex items-center ml-3">
+                
+                <!-- <button type="button" class="flex items-center ml-3">
                   Idioma
                   <svg
                     class="w-2.5 h-2.5 ml-2.5"
@@ -217,11 +222,12 @@
                       d="m1 1 4 4 4-4"
                     />
                   </svg>
-                </button>
+                </button> -->
+                <div class="ml-3 gtranslate_wrapper"></div>
               </a>
             </li>
             <!-- Dropdown menu -->
-            <div
+            <!-- <div
               id="dropdown"
               class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 truncate dark:bg-gray-700"
             >
@@ -229,7 +235,7 @@
                 class="text-sm text-gray-700 dark:text-gray-200"
                 aria-labelledby="dropdownDefaultButton"
               >
-                <li>
+                <li> 
                   <a
                     href="#"
                     class="block px-4 py-2 hover:bg-gray-300 hover:text-gray-800 dark:hover:bg-gray-600 dark:hover:text-white"
@@ -244,8 +250,8 @@
                   >
                 </li>
               </ul>
-            </div>
-          </ul>
+            </div> -->    
+          </ul>     
         </div>
       </aside>
     </header>
@@ -600,8 +606,6 @@
           <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright © Igor Bernardes</span>
       </div>
   </footer>
-  
-  
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
@@ -614,5 +618,10 @@
         });
     </script>
 
-  </body>
+
+<script>window.gtranslateSettings = {"default_language":"pt","native_language_names":true,"detect_browser_language":true,"languages":["pt","en"],"wrapper_selector":".gtranslate_wrapper","flag_size":24,"alt_flags":{"en":"usa","pt":"brazil"}}</script>
+
+
+
+</body>
 </html>
