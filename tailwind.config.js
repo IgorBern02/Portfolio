@@ -17,6 +17,7 @@ module.exports = {
         corSol: "#f39c12",
       },
       fontFamily: {
+        'mooli': ['Mooli', 'sans-serif'],
         'nunito': ['Nunito', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
         'poppins': ['Poppins', 'sans-serif'],
