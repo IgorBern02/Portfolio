@@ -10,7 +10,7 @@ chk.addEventListener("change", () => {
 // Igor Bernardes digitando sozinho
 var el = document.querySelector('#name');
 var text = 'Igor Bernardes'
-var interval = 100;
+var interval = 200;
 
 function showtext(el, text, interval) {
     var char = text.split('').reverse();
