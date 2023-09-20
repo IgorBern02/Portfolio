@@ -11,13 +11,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <script src="https://cdn.gtranslate.net/widgets/latest/fc.js" defer></script>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script
+      src="https://cdn.gtranslate.net/widgets/latest/fc.js"
+      defer
+    ></script>
   </head>
   <body class="min-h-screen bg-white dark:bg-black overflow-x-hidden">
     <!--Header-->
-    <header class="w-screen h-14 bg-brand-400 p-3 flex items-center" id="header">
+    <header
+      class="w-screen h-14 bg-brand-400 p-3 flex items-center"
+      id="header"
+    >
       <!-- Sidebar -->
       <button
         data-drawer-target="default-sidebar"
@@ -41,17 +49,17 @@
         </svg>
       </button>
 
-
       <aside
         id="default-sidebar"
         class="fixed top-0 left-0 z-40 w-64 h-screen font-poppins text-sm transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
-        <div class="flex items- justify-center sm:w-screen h-20 p-2 bg-brand-400">
+        <div
+          class="flex items- justify-center sm:w-screen h-20 p-2 bg-brand-400"
+        >
           <div
             class="flex justify-around sm:justify-between items-center space-x-8 sm:relative sm:w-screen"
           >
-            
             <div
               class="flex flex-col sm:flex-row items-center sm:gap-x-4 sm:w-full dark:text-white"
             >
@@ -144,15 +152,16 @@
                 href="#skills"
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
               >
-                <svg 
-                class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" 
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" 
-                fill="currentColor" 
-                viewBox="0 0 20 20"
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
                 >
                   <path
-                    d="M.906 0 2.5 17.683l7.5 2.159 7.544-2.158L19.092 0H.906ZM15.1 6H7.044l.174 2h7.776l-.632 6.513-4.29 1.371-4.326-1.444-.29-2.909H7.5l.163 1.4 2.424.809 2.37-.757.3-2.982H5.368L4.8 4h10.519L15.1 6Z"/>
+                    d="M.906 0 2.5 17.683l7.5 2.159 7.544-2.158L19.092 0H.906ZM15.1 6H7.044l.174 2h7.776l-.632 6.513-4.29 1.371-4.326-1.444-.29-2.909H7.5l.163 1.4 2.424.809 2.37-.757.3-2.982H5.368L4.8 4h10.519L15.1 6Z"
+                  />
                 </svg>
                 <span class="flex-1 ml-3 whitespace-nowrap">Linguagens</span>
               </a>
@@ -180,14 +189,14 @@
                 <span class="flex-1 ml-3 whitespace-nowrap">Contato</span>
               </a>
             </li>
-            <li>
             <li id="dropdownDefaultButton" data-dropdown-toggle="dropdown">
               <a
+                id="dropdownHoverButton"
+                data-dropdown-toggle="dropdownHover"
+                data-dropdown-trigger="hover"
                 href="#"
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700 group"
               >
-              
-             
                 <svg
                   class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                   aria-hidden="true"
@@ -204,8 +213,7 @@
                   />
                 </svg>
 
-                
-                <!-- <button type="button" class="flex items-center ml-3">
+                <button class="flex items-center ml-3" type="button">
                   Idioma
                   <svg
                     class="w-2.5 h-2.5 ml-2.5"
@@ -222,49 +230,47 @@
                       d="m1 1 4 4 4-4"
                     />
                   </svg>
-                </button> -->
-                <div class="ml-3 gtranslate_wrapper"></div>
+                </button>
               </a>
             </li>
             <!-- Dropdown menu -->
-            <!-- <div
-              id="dropdown"
+            <div
+              id="dropdownHover"
               class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 truncate dark:bg-gray-700"
             >
               <ul
                 class="text-sm text-gray-700 dark:text-gray-200"
-                aria-labelledby="dropdownDefaultButton"
+                aria-labelledby="dropdownHoverButton"
               >
-                <li> 
-                  <a
-                    href="#"
-                    class="block px-4 py-2 hover:bg-gray-300 hover:text-gray-800 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >English</a
-                  >
-                </li>
                 <li>
                   <a
                     href="#"
                     class="block px-4 py-2 hover:bg-gray-300 hover:text-gray-800 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >Português</a
-                  >
+                    ><div
+                      class="flex flex-row items-center justify-center gap-4 gtranslate_wrapper"
+                    ></div>
+                  </a>
                 </li>
               </ul>
-            </div> -->    
-          </ul>     
+            </div>
+          </ul>
         </div>
       </aside>
     </header>
 
     <!--Bio-->
     <section
-    data-aos="zoom-in" 
-    class=" w-screen h-auto p-5 flex justify-center mt-24">
+      data-aos="zoom-in"
+      class="w-screen h-auto p-5 flex justify-center mt-24"
+    >
       <div
         class="w-4/5 sm:w-3/5 h-auto flex flex-col justify-evenly items-center gap-y-3 dark:text-white font-poppins"
       >
         <p class="text-xl sm:text-lg font-medium font-roboto">Oi, eu sou o</p>
-        <h1 class="text-5xl sm:w-full sm:text-center font-mooli text-brand-400" id="name"></h1>
+        <h1
+          class="text-5xl sm:w-full sm:text-center font-mooli text-brand-400"
+          id="name"
+        ></h1>
         <p class="text-base font-light sm:text-lg sm:w-4/5 mt-6 font-roboto">
           Eu sou estudante de programação, com foco em front end desenvolvimento
           web, estou no segundo semestre da Faculdade de Análise e
@@ -272,13 +278,13 @@
         </p>
 
         <a href="#projetos">
-        <button
-          type="button"
-          class="mt-4 text-black dark:text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:outline-none shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-        >
-          Veja Meus Projetos
-        </button>
-      </a>
+          <button
+            type="button"
+            class="mt-4 text-black dark:text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:outline-none shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
+            Veja Meus Projetos
+          </button>
+        </a>
       </div>
     </section>
 
@@ -299,9 +305,15 @@
       <div
         class="flex flex-col sm:flex-row sm:justify-around p-5 mt-16 w-4/5 sm:h-2/5 bg-gray-100 dark:bg-gray-900 dark:text-white rounded-lg"
       >
-        <div class="flex flex-col items-center justify-center gap-y-12 sm:w-2/5">
-          <div class="flex flex-row justify-center items-center w-full gap-x-2 font-roboto">
-            <div class="porcentagem group cursor-pointer h-8 sm:h-7">
+        <div
+          class="flex flex-col items-center justify-center gap-y-12 sm:w-2/5"
+        >
+          <div
+            class="flex flex-row justify-center items-center w-full gap-x-2 font-roboto"
+          >
+            <div
+              class="porcentagem group cursor-pointer h-8 sm:h-7 shadow-md shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80"
+            >
               <div
                 class="bg-brand-400 z-10 absolute h-full w-0 group-hover:w-11/12 duration-500 rounded-full"
               ></div>
@@ -310,12 +322,22 @@
               ></div>
               <p class="z-20 relative text-white mt-1">90%</p>
             </div>
-            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M.906 0 2.5 17.683l7.5 2.159 7.544-2.158L19.092 0H.906ZM15.1 6H7.044l.174 2h7.776l-.632 6.513-4.29 1.371-4.326-1.444-.29-2.909H7.5l.163 1.4 2.424.809 2.37-.757.3-2.982H5.368L4.8 4h10.519L15.1 6Z"/>
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M.906 0 2.5 17.683l7.5 2.159 7.544-2.158L19.092 0H.906ZM15.1 6H7.044l.174 2h7.776l-.632 6.513-4.29 1.371-4.326-1.444-.29-2.909H7.5l.163 1.4 2.424.809 2.37-.757.3-2.982H5.368L4.8 4h10.519L15.1 6Z"
+              />
             </svg>
           </div>
           <div class="flex flex-row justify-center items-center w-full gap-x-2">
-            <div class="porcentagem group cursor-pointer h-8 sm:h-7">
+            <div
+              class="porcentagem group cursor-pointer h-8 sm:h-7 shadow-md shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80"
+            >
               <div
                 class="bg-brand-400 z-10 absolute h-full w-0 group-hover:w-11/12 duration-500 rounded-full"
               ></div>
@@ -324,27 +346,43 @@
               ></div>
               <p class="z-20 relative text-white mt-1">90%</p>
             </div>
-            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M.906 0 2.5 17.781l7.5 2.16 7.544-2.159L19.091 0H.906Zm13.437 14.679-4.337 1.2h-.009l-4.341-1.2-.3-3.158h2.13l.151 1.521 2.36.637 2.363-.638.248-3.041H5.264l-.19-2h7.718l.177-2H4.87l-.177-2h10.614l-.964 10.679Z"/>
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M.906 0 2.5 17.781l7.5 2.16 7.544-2.159L19.091 0H.906Zm13.437 14.679-4.337 1.2h-.009l-4.341-1.2-.3-3.158h2.13l.151 1.521 2.36.637 2.363-.638.248-3.041H5.264l-.19-2h7.718l.177-2H4.87l-.177-2h10.614l-.964 10.679Z"
+              />
             </svg>
           </div>
           <div class="flex flex-row justify-center items-center w-full gap-x-2">
-            <div class="porcentagem group cursor-pointer h-8 sm:h-7">
+            <div
+              class="porcentagem group cursor-pointer h-8 sm:h-7 shadow-md shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80"
+            >
               <div
                 class="bg-brand-400 z-10 absolute h-full w-0 group-hover:w-5/12 duration-500 rounded-full"
               ></div>
               <div
                 class="bg-brand-300 absolute h-full w-5/12 rounded-full"
               ></div>
-              <p class="z-20 relative text-black dark:text-white mt-1 mr-1">40%</p>
+              <p class="z-20 relative text-black dark:text-white mt-1 mr-1">
+                40%
+              </p>
             </div>
             <i class="fa-brands fa-js fa-xl"></i>
           </div>
         </div>
 
-        <div class="flex flex-col items-center justify-center gap-y-12 sm:w-2/5 mt-12 sm:mt-0">
+        <div
+          class="flex flex-col items-center justify-center gap-y-12 sm:w-2/5 mt-12 sm:mt-0"
+        >
           <div class="flex flex-row justify-center items-center w-full gap-x-2">
-            <div class="porcentagem group cursor-pointer h-8 sm:h-7">
+            <div
+              class="porcentagem group cursor-pointer h-8 sm:h-7 shadow-md shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80"
+            >
               <div
                 class="bg-brand-400 z-10 absolute h-full w-0 group-hover:w-3/5 duration-500 rounded-full"
               ></div>
@@ -353,28 +391,48 @@
               ></div>
               <p class="z-20 relative text-white mt-1">60%</p>
             </div>
-            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
-              <path d="M9.782.72a4.773 4.773 0 0 0-4.8 4.173 3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921-.969 1.379-2.44 2.207-4.259 1.231C14.488 3.365 13.551.6 9.782.72ZM4.8 6.979A4.772 4.772 0 0 0 0 11.151a3.43 3.43 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921-.97 1.379-2.44 2.208-4.259 1.231C9.51 9.623 8.573 6.853 4.8 6.979Z"/>
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 14"
+            >
+              <path
+                d="M9.782.72a4.773 4.773 0 0 0-4.8 4.173 3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921-.969 1.379-2.44 2.207-4.259 1.231C14.488 3.365 13.551.6 9.782.72ZM4.8 6.979A4.772 4.772 0 0 0 0 11.151a3.43 3.43 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921-.97 1.379-2.44 2.208-4.259 1.231C9.51 9.623 8.573 6.853 4.8 6.979Z"
+              />
             </svg>
           </div>
           <div class="flex flex-row justify-center items-center w-full gap-x-2">
-            <div class="porcentagem group cursor-pointer h-8 sm:h-7">
+            <div
+              class="porcentagem group cursor-pointer h-8 sm:h-7 shadow-md shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80"
+            >
               <div
                 class="bg-brand-400 z-10 absolute h-full w-0 group-hover:w-2/5 duration-500 rounded-full"
               ></div>
               <div
                 class="bg-brand-300 absolute h-full w-2/5 rounded-full"
               ></div>
-              <p class="z-20 relative text-black dark:text-white mt-1">
-                40%
-              </p>
+              <p class="z-20 relative text-black dark:text-white mt-1">40%</p>
             </div>
-            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                clip-rule="evenodd"
+              />
             </svg>
           </div>
           <div class="flex flex-row justify-center items-center w-full gap-x-2">
-            <div class="porcentagem group cursor-pointer h-8 sm:h-7">
+            <div
+              class="porcentagem group cursor-pointer h-8 sm:h-7 shadow-md shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80"
+            >
               <div
                 class="bg-brand-400 z-10 absolute h-full w-0 group-hover:w-8/12 duration-500 rounded-full"
               ></div>
@@ -390,8 +448,13 @@
     </section>
 
     <!--Projetos-->
-    <section id="projetos" class="relative w-screen h-auto p-5 flex justify-center mt-24 sm:mt-12">
-      <div class="w-full absolute font-medium text-center font-mooli text-3xl font-medium dark:text-white" >
+    <section
+      id="projetos"
+      class="relative w-screen h-auto p-5 flex justify-center mt-24 sm:mt-12"
+    >
+      <div
+        class="w-full absolute font-medium text-center font-mooli text-3xl font-medium dark:text-white"
+      >
         <h1>Meus Projetos</h1>
       </div>
       <div class="grid sm:grid-cols-2 sm:grid-rows-2 gap-20 mt-24">
@@ -408,7 +471,10 @@
             />
           </a>
           <div class="p-5">
-            <a href="#">
+            <a
+              href="https://igorbern02.github.io/digital-clock/"
+              target="_blank"
+            >
               <h5
                 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
               >
@@ -416,23 +482,51 @@
               </h5>
             </a>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Projeto com a ideia de fazer um Relógio Digital com hora e data ao vivo, feito com Html,Css(Sass),Js.
+              Projeto com a ideia de fazer um Relógio Digital com hora e data ao
+              vivo, feito com Html,Css(Sass),Js.
             </p>
             <div class="flex items-center justify-between">
-              
-
-            <div class="flex items-center gap-x-4 mt-4">
-              <a href="https://github.com/IgorBern02/digital-clock" target="_blank">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
-                </svg>
-              </a>
-              <a href="https://igorbern02.github.io/digital-clock/" target="_blank">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" viewBox="0 0 20 18">
-    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"/>
-                </svg>
-              </a>
-            </div>
+              <div class="flex items-center gap-x-4 mt-4">
+                <a
+                  href="https://github.com/IgorBern02/digital-clock"
+                  target="_blank"
+                >
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://igorbern02.github.io/digital-clock/"
+                  target="_blank"
+                >
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="18"
+                    fill="none"
+                    viewBox="0 0 20 18"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -450,7 +544,10 @@
             />
           </a>
           <div class="p-5">
-            <a href="#">
+            <a
+              href="https://igorbern02.github.io/Sistema-Banco/"
+              target="_blank"
+            >
               <h5
                 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
               >
@@ -461,19 +558,47 @@
               Projeto de um sistema de saques e depositos com javascript.
             </p>
             <div class="flex items-center justify-between relative sm:top-6">
-
-            <div class="flex items-center gap-x-4 mt-4">
-              <a href="https://github.com/IgorBern02/Sistema-Banco" target="_blank">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
-                </svg>
-              </a>
-              <a href="https://igorbern02.github.io/Sistema-Banco/" target="_blank">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" viewBox="0 0 20 18">
-    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"/>
-                </svg>
-              </a>
-            </div>
+              <div class="flex items-center gap-x-4 mt-4">
+                <a
+                  href="https://github.com/IgorBern02/Sistema-Banco"
+                  target="_blank"
+                >
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://igorbern02.github.io/Sistema-Banco/"
+                  target="_blank"
+                >
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="18"
+                    fill="none"
+                    viewBox="0 0 20 18"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -491,7 +616,10 @@
             />
           </a>
           <div class="p-5">
-            <a href="#">
+            <a
+              href="https://igorbern02.github.io/Travel-Dream/"
+              target="_blank"
+            >
               <h5
                 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
               >
@@ -499,31 +627,65 @@
               </h5>
             </a>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Essa landing page foi criada com os paises que um dia eu desejo conhecê-los, e com alguns pontos turísticos mais famosos desses países escolhidos. Feito com html,css,js. 
+              Essa landing page foi criada com os paises que um dia eu desejo
+              conhecê-los, e com alguns pontos turísticos mais famosos desses
+              países escolhidos. Feito com html,css,js.
             </p>
             <div class="flex items-center justify-between">
-            <div class="flex items-center gap-x-4 mt-4">
-              <a href="https://github.com/IgorBern02/Travel-Dream" target="_blank">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
-                </svg>
-              </a>
-              <a href="https://igorbern02.github.io/Travel-Dream/" target="_blank">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" viewBox="0 0 20 18">
-    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"/>
-                </svg>
-              </a>
-            </div>
+              <div class="flex items-center gap-x-4 mt-4">
+                <a
+                  href="https://github.com/IgorBern02/Travel-Dream"
+                  target="_blank"
+                >
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://igorbern02.github.io/Travel-Dream/"
+                  target="_blank"
+                >
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="18"
+                    fill="none"
+                    viewBox="0 0 20 18"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
         <!--Login Validado-->
         <div
-        data-aos="flip-right"
+          data-aos="flip-right"
           class="max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
-          <a href="https://igorbern02.github.io/Login_Validado/" target="_blank">
+          <a
+            href="https://igorbern02.github.io/Login_Validado/"
+            target="_blank"
+          >
             <img
               class="rounded-t-lg"
               src="/docs/images/loginValidado.png"
@@ -531,7 +693,10 @@
             />
           </a>
           <div class="p-5">
-            <a href="#">
+            <a
+              href="https://igorbern02.github.io/Login_Validado/"
+              target="_blank"
+            >
               <h5
                 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
               >
@@ -539,89 +704,142 @@
               </h5>
             </a>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              Sistema de login para validações feito com js e firebase, meu primeiro login com validações.
+              Sistema de login para validações feito com js e firebase, meu
+              primeiro login com validações.
             </p>
             <div class="flex items-center justify-between relative sm:top-12">
-            <div class="flex items-center gap-x-4 mt-4">
-              <a href="https://github.com/IgorBern02/Login_Validado" target="_blank">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
-                </svg>
-              </a>
-              <a href="https://igorbern02.github.io/Login_Validado/" target="_blank">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" viewBox="0 0 20 18">
-    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"/>
-                </svg>
-              </a>
-            </div>
+              <div class="flex items-center gap-x-4 mt-4">
+                <a
+                  href="https://github.com/IgorBern02/Login_Validado"
+                  target="_blank"
+                >
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://igorbern02.github.io/Login_Validado/"
+                  target="_blank"
+                >
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="18"
+                    fill="none"
+                    viewBox="0 0 20 18"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      d="M1 7h18M4 4h.01M7 4h.01M10 4h.01M3 17h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Z"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        
-      
-        
       </div>
     </section>
 
     <!--Seta pra voltar-->
     <div class="w-screen h-12 relative mt-5 px-5">
       <a href="#header">
-      <div 
-      data-aos="flip-up"
-      class="bg-brand-400 absolute right-5 sm:right-8 h-full w-12 flex items-center justify-center rounded-full cursor-pointer">
-        
-          <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          fill="none" 
-          viewBox="0 0 24 24" 
-          stroke-width="1.5" 
-          stroke="currentColor" 
-          class="w-6 h-6 text-white">
-            <path 
-            stroke-linecap="round" 
-            stroke-linejoin="round" 
-            d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
-          </svg>          
-        
-      </div>
-    </a>
+        <div
+          data-aos="flip-up"
+          class="bg-brand-400 absolute right-5 sm:mr-4 h-full w-12 flex items-center justify-center rounded-full cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75"
+            />
+          </svg>
+        </div>
+      </a>
     </div>
 
     <!--Footer-->
     <footer class="w-screen bg-gray-100 shadow dark:bg-gray-900" id="contato">
-      <div class="w-full max-w-screen-xl mx-auto mt-5 p-4 md:py-8 flex flex-col items-center justify-center">
-          <div class="sm:flex sm:items-center sm:justify-between">
-              <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                  <li>
-                      <a href="https://github.com/IgorBern02" target="_blank" class="mr-4 hover:underline md:mr-6 ">GitHub</a>
-                  </li>
-                  <li>
-                      <a href="https://wa.me/5513991246604"target="_blank" class="mr-4 hover:underline md:mr-6">Whatsapp</a>
-                  </li>
-                  <li>
-                      <a href="#" class="mr-4 hover:underline md:mr-6 ">LinkedIn</a>
-                  </li>
-              </ul>
-          </div>
-          <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright © Igor Bernardes</span>
+      <div
+        class="w-full max-w-screen-xl mx-auto mt-5 p-4 md:py-8 flex flex-col items-center justify-center"
+      >
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+          >
+            <li>
+              <a
+                href="https://github.com/IgorBern02"
+                target="_blank"
+                class="mr-4 hover:underline md:mr-6"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://wa.me/5513991246604"
+                target="_blank"
+                class="mr-4 hover:underline md:mr-6"
+                >Whatsapp</a
+              >
+            </li>
+            <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >Copyright © Igor Bernardes</span
+        >
       </div>
-  </footer>
-
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/998c60ef77.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./src/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1000,
-        });
+      AOS.init({
+        duration: 1000,
+      });
     </script>
 
-
-<script>window.gtranslateSettings = {"default_language":"pt","native_language_names":true,"detect_browser_language":true,"languages":["pt","en"],"wrapper_selector":".gtranslate_wrapper","flag_size":24,"alt_flags":{"en":"usa","pt":"brazil"}}</script>
-
-
-
-</body>
+    <script>
+      window.gtranslateSettings = {
+        default_language: "pt",
+        native_language_names: true,
+        detect_browser_language: true,
+        languages: ["pt", "en"],
+        wrapper_selector: ".gtranslate_wrapper",
+        flag_size: 24,
+        alt_flags: { en: "usa", pt: "brazil" },
+      };
+    </script>
+  </body>
 </html>
